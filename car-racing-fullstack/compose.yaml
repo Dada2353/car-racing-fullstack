@@ -1,0 +1,13 @@
+services:
+  frontend:
+    build: ./frontend
+    ports:
+      - "8092:80"
+    depends_on:
+      - backend
+  backend:
+    build: ./backend
+    volumes:
+      - scores_data:/data
+volumes:
+  scores_data:

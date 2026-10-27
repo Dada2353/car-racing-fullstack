@@ -1,0 +1,11 @@
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+__pycache__/
+*.pyc
+node_modules/
+*.db
+*.sqlite
+*.sqlite3
